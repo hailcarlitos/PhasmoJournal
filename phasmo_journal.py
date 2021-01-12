@@ -6,6 +6,7 @@ ghost_evidence_list = ["None", "EMF Level 5", "FingersPrints", "Freezing Tempera
 
 window = tk.Tk()
 
+
 background_image = tk.PhotoImage(file = "images/paper-texture.png")
 background_label = tk.Label(window, image=background_image)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
@@ -59,5 +60,7 @@ button_frame.pack()
 
 clear_button = tk.Button(button_frame, text="Clear", font=("Helvetica", 12), command=clear)
 clear_button.pack()
+
+window.wm_attributes("-transparentcolor", "red")
 
 window.mainloop()
